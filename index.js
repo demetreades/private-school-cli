@@ -46,11 +46,19 @@ services.viewCourses(connection);
 services.viewAssignments(connection);
 
 // prompt trainer
-let promptFName = prompt(`Enter trainer\'s first name   :  `);
-let promptLName = prompt(`Enter trainer\'s last name   :  `);
-let promptSId = prompt(`Enter trainer\'s subject id (max 9)   :  `);
-const promptTrainer = new Trainer(promptFName, promptLName, promptSId);
-services.insertTrainers(connection, promptTrainer);
+// let trainerfName = prompt(`Enter trainer\'s first name   :  `);
+// let trainerlName = prompt(`Enter trainer\'s last name   :  `);
+// let trainersId = prompt(`Enter trainer\'s subject id (max 9)   :  `);
+// const promptTrainer = new Trainer(trainerfName, trainerlName, trainersId);
+// services.insertTrainers(connection, promptTrainer);
+
+// prompt student
+let studentfName = prompt(`Enter student\'s first name   :  `);
+let studentlName = prompt(`Enter student\'s last name   :  `);
+let studentTuition = prompt(`Enter student\'s tuition fees   :  `);
+let studentDate = prompt(`Enter student\'s date of birth   :  `);
+const promptStudent = new Student(studentfName, studentlName, studentTuition, studentDate);
+services.insertStudents(connection, promptStudent);
 
 connection.end();
 
