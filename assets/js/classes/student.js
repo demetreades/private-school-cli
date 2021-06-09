@@ -24,9 +24,6 @@ class Student extends Person {
     return _dateOfBirth.get(this);
   }
   set dateOfBirth(value) {
-    if(!(value instanceof Date)) {
-      throw new Error('Invalid submittion date');
-    }
     _dateOfBirth.set(this,value);
   }
 

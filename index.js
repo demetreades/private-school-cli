@@ -7,7 +7,7 @@ const Trainer = require('./assets/js/classes/trainer.js');
 const Course = require('./assets/js/classes/course.js');
 const Assignment = require('./assets/js/classes/assignment.js');
 
-const saibaba = new Student('Sai', 'Baba', '2500', new Date(1987,1,5));
+const saibaba = new Student('Sai', 'Baba', '2500', '1984-04-04');
 const giannis = new Trainer('Giannis', 'Mantoudis', 1);
 const CB13 = new Course('CB13', 'JavaScripta' ,'Part Time', new Date(2021,1,1,09,00,00), new Date(2021,3,30,17,00,00));
 const assign1 = new Assignment('Private school', 'Make an application emulating a private school', new Date(2021,1,5, 23,59,00), 20, 80)
@@ -46,17 +46,17 @@ services.viewCourses(connection);
 services.viewAssignments(connection);
 
 // prompt trainer
-// let trainerfName = prompt(`Enter trainer\'s first name   :  `);
-// let trainerlName = prompt(`Enter trainer\'s last name   :  `);
-// let trainersId = prompt(`Enter trainer\'s subject id (max 9)   :  `);
-// const promptTrainer = new Trainer(trainerfName, trainerlName, trainersId);
-// services.insertTrainers(connection, promptTrainer);
+let trainerfName = prompt(`Enter trainer\'s first name   :  `);
+let trainerlName = prompt(`Enter trainer\'s last name   :  `);
+let trainersId = prompt(`Enter trainer\'s subject id (max 9)   :  `);
+const promptTrainer = new Trainer(trainerfName, trainerlName, trainersId);
+services.insertTrainers(connection, promptTrainer);
 
 // prompt student
 let studentfName = prompt(`Enter student\'s first name   :  `);
 let studentlName = prompt(`Enter student\'s last name   :  `);
-let studentTuition = prompt(`Enter student\'s tuition fees   :  `);
-let studentDate = prompt(`Enter student\'s date of birth   :  `);
+let studentTuition = prompt(`Enter student\'s tuition fees  (max lenght 4digits) :  `);
+let studentDate = prompt(`Enter student\'s date of birth   format (YYYY-MM-DD):  `);
 const promptStudent = new Student(studentfName, studentlName, studentTuition, studentDate);
 services.insertStudents(connection, promptStudent);
 

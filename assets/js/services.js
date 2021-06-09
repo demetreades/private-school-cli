@@ -46,7 +46,7 @@ function createTrainer(connection, trainer) {
   connection.query("INSERT INTO `university`.`trainers` (`first_name`, `last_name`, `subjects_id`) VALUES ('" + trainer.firstName + "','" + trainer.lastName + "','" + trainer.subjectId + "');", function(err,result) {
     if(err) throw err;
     // console.log(result);
-    console.log(`\n~~~~~~~~~~~~  ${trainer.constructor}: ${trainer.fullName()}, inserted successfully   ~~~~~~~~~~~~\n`);
+    console.log(`\n~~~~~~~~~~~~  Trainer: ${trainer.fullName()}, inserted successfully   ~~~~~~~~~~~~\n`);
   });  
 };
 
@@ -54,7 +54,7 @@ function createStudent(connection, student) {
   connection.query("INSERT INTO `university`.`students` (`first_name`, `last_name`, `tuition_fees`, date_of_birth) VALUES ('" + student.firstName + "','" + student.lastName + "','" + student.tuitionFees + "','" + student.dateOfBirth + "');", function(err,result) {
     if(err) throw err;
     // console.log(result);
-    console.log(`\n~~~~~~~~~~~~   ${student.constructor}: ${student.fullName()}, inserted successfully   ~~~~~~~~~~~~\n`);
+    console.log(`\n~~~~~~~~~~~~   Student: ${student.fullName()}, inserted successfully   ~~~~~~~~~~~~\n`);
   });  
 };
 
