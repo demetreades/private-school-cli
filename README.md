@@ -4,17 +4,15 @@
 
 SQL files are located under `/assets/js/sql/`
 
-first import _database_, _views_ and _inserts_ then initialiaze via `npm start`
-
-
-
+1. import _database_ 
+2. import _inserts_
+3. create _views_
+4. initialiaze via `npm start`
 
 <br>
 
-
 ##### ER Diagram
 ![diagram](./assets/sql/diagram.png)
-
 
 <br>
 <br>
