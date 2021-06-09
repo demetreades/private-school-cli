@@ -1,0 +1,17 @@
+{
+  "name": "private-school__test",
+  "version": "0.1.0",
+  "description": "just for testing",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && node index.js"
+  },
+  "keywords": ["test", "test", "ena", "duo"],
+  "author": "Quorum",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.7",
+    "prompt-sync": "^4.2.0"
+  }
+}
