@@ -12,9 +12,9 @@ class Trainer extends Person {
     return _subjectId.get(this);
   }
   set subjectId(value) {
-    // if(isNaN(value) || value < 20 || value < 1) {
-    //   throw new Error('Invalid subject')
-    // }
+    if(isNaN(value)) {
+      throw new Error('Invalid subject')
+    }
     _subjectId.set(this,value);
   }
 
