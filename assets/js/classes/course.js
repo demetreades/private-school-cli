@@ -20,7 +20,7 @@ class Course {
     if(value.length < 2) {
       throw new Error('Title too short');
     }
-    _title.set(this,value.toUppercase());
+    _title.set(this,value.toUpperCase());
   }
 
   get stream() {
