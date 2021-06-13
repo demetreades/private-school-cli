@@ -103,4 +103,3 @@ CONSTRAINT `assignments_student_assignments_id__assignments_id` FOREIGN KEY (`as
 CONSTRAINT `assignments_student_students_id__students_id` FOREIGN KEY (`students_id`) REFERENCES `students`(`id`) ,
 CONSTRAINT `assignments_student_courses_id__courses_id` FOREIGN KEY (`courses_id`) REFERENCES `courses`(`id`));
 
-

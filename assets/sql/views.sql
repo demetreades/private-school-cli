@@ -1,7 +1,7 @@
 
 -- courses
 CREATE VIEW `all_courses` AS 
-SELECT  `courses`.`id` , `course_title`.`title`, `course_stream`.`stream`, `course_type`.`type` FROM `university`.`courses`
+SELECT  `courses`.`id` , `course_title`.`title`, `course_stream`.`stream`, `course_type`.`type`, `courses`.`start_date`, `courses`.`end_date` FROM `university`.`courses`
 LEFT JOIN `course_title` ON `course_title`.`id` = `courses`.`title_id`
 LEFT JOIN `course_stream` ON `course_stream`.`id` = `courses`.`stream_id`
 LEFT JOIN `course_type` ON `course_type`.`id` = `courses`.`type_id`;
@@ -9,7 +9,7 @@ SELECT * FROM `all_courses`;
 
 -- students
 CREATE VIEW `all_students` AS
-SELECT `students`.`id`, `students`.`first_name`, `students`.`last_name`, `courses`.`description` FROM `courses`
+SELECT `students`.`id`, `students`.`first_name`, `students`.`last_name`, `courses`.`description`, `students`.`date_of_birth`, `students`.`tuition_fees` FROM `courses`
 JOIN `course_title` ON `courses`.`title_id` = `course_title`.`id` 
 JOIN `course_stream` ON `courses`.`stream_id` = `course_stream`.`id` 
 JOIN `course_type` ON `courses`.`type_id` = `course_type`.`id` 

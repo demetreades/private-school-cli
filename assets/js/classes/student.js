@@ -14,8 +14,8 @@ class Student extends Person {
     return _tuitionFees.get(this);
   }
   set tuitionFees(value) {
-    if(isNaN(value) || value.length < 0 || value.length > 4) {
-      throw new Error('Invalid tuition fees');
+    if(isNaN(value) || value < 0 || value > 2500) {
+      throw new Error(`Invalid tuition fees (max 2500€`);
     }
     _tuitionFees.set(this,value);
   }

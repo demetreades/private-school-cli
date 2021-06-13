@@ -10,7 +10,7 @@ const Assignment = require('./assets/js/classes/assignment.js');
 const saibaba = new Student('Sai', 'Baba', '2500', '1984-04-04');
 const giannis = new Trainer('Giannis', 'Mantoudis', 1);
 const CB13 = new Course('CB13', 'JavaScripta' ,'Part Time', new Date(2021,1,1,09,00,00), new Date(2021,3,30,17,00,00));
-const assign1 = new Assignment('Private school', 'Make an application emulating a private school', new Date(2021,1,5, 23,59,00), 20, 80)
+const assignment = new Assignment('Private school', 'Make an application emulating a private school', new Date(2021,1,5, 23,59,00), 20, 80)
 
 // for testing
 console.log('\n\n\n\n\n==========================================================================================');
@@ -21,7 +21,7 @@ console.log(giannis.toString());
 console.log('\n------------------------------------------------------------------------------------------\n');
 console.log(CB13.toString());
 console.log('\n------------------------------------------------------------------------------------------\n');
-console.log(assign1.toString());
+console.log(assignment.toString());
 console.log('\n------------------------------------------------------------------------------------------\n');
 console.log('==========================================================================================\n\n\n\n\n');
 
@@ -32,7 +32,7 @@ const connection = mysql.createConnection({
   user: "root",
   password: "1212",
   database: "university",
-  connectTimeout: 60000
+  connectTimeout: 160000
 });
 
 connection.connect(function(error){
@@ -51,6 +51,8 @@ let trainerlName = prompt(`Enter trainer\'s last name   :  `);
 let trainersId = prompt(`Enter trainer\'s subject id (max 9)   :  `);
 const promptTrainer = new Trainer(trainerfName, trainerlName, trainersId);
 services.insertTrainers(connection, promptTrainer);
+
+console.log('\n============================================\n');
 
 // prompt student
 let studentfName = prompt(`Enter student\'s first name   :  `);
