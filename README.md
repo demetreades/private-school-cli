@@ -2,7 +2,7 @@
 
 <br>
 
-SQL files located under `/assets/js/sql/`
+SQL files located under `/assets/sql/`
 
 1. import _database_ 
 2. import _inserts_
