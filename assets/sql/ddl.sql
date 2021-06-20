@@ -7,13 +7,6 @@ CREATE DATABASE IF NOT EXISTS `university`;
 USE `university`;
 
 
--- TODO : ::::::::::: NA DIORTHOTHOUN TA INSERTSSSSS !!!!!!!!!!!!!!!!!!!!!!!
--- TODO : assignments stous students na mpoune ta assignments kai to DATETIME
--- TODO : trainers subjects na mpoune ta INSERTS sta courses
--- TODO : students INSERTS na mpoune 10 se ena course kai 8 trainers me ta subjects tous
--- TODO : na ginoun 3 courses ena CB13 pou trexei twra ena CB12 pou exei teliwsei ena CB14 pou thaaa ginei (gia ta fees)
-
-
 -- ******************************************* `course_title`
 
 CREATE TABLE IF NOT EXISTS `course_title`
