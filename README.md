@@ -2,18 +2,19 @@
 
 <br>
 
-SQL files located under `/assets/sql/`
+SQL files located under `/src/db/`
 
-1. import _database_
-2. import _inserts_
-3. create _views_
-4. initialiaze via `npm start`
+1. install dependencies: `npm i `
+2. import _database_
+3. import _inserts_
+4. create _views_
+5. start program via `npm start`
 
 <br>
 
 ##### ER Diagram
 
-![diagram](./assets/sql/diagram.png)
+![diagram](./src/db/diagram.png)
 
 <br>
 <br>
