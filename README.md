@@ -1,10 +1,10 @@
-# Private school CLI project
+# Private school CLI app
 
 <br>
 
 SQL files located under `/src/db/`
 
-1. install dependencies: `npm i `
+1. install dependencies: `npm i`
 2. import _database_
 3. import _inserts_
 4. create _views_
