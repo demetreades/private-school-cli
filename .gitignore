@@ -1,4 +1,2 @@
-/node_modules
-/notes.txt
-/dimitriadis__small_project.txt
-/package-lock.json
+node_modules
+package-lock.json

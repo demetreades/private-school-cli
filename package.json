@@ -1,21 +1,23 @@
 {
-  "name": "private-school__test",
+  "name": "private-school-cli",
   "version": "0.1.0",
   "description": "just for testing",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "npm install && node ."
+    "start": "nodemon start"
   },
   "keywords": [
-    "test",
-    "test",
-    "ena",
-    "duo"
+    "crud",
+    "mysql",
+    "cli"
   ],
   "author": "Quorum",
   "license": "ISC",
   "dependencies": {
     "mysql2": "^2.2.5",
     "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
   }
 }
